@@ -1,6 +1,6 @@
                                         Snake Game
 
-Game is based on the legendary Snake game from Nokia3310.
+Game takes inspiration from legendary Snake game from Nokia3310.
 
 Every part of this game was written in python, using Turtle library.
 
