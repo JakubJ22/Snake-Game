@@ -1,8 +1,10 @@
 from turtle import Turtle
 import time
+
+
 FONT = ('Arial', 15, 'normal')
 
-best_score_file = "best_score.txt"
+BEST_SCORE_FILE = "best_score.txt"
 
 
 class Score_Board(Turtle):
@@ -47,10 +49,10 @@ class Score_Board(Turtle):
         self.give_best_score()
 
     def update_best_score(self):
-        if self.score > self.max_score:
+        if self.score > int(self.max_score):
             self.max_score = self.score
 
-            with open(best_score_file, "w") as file:
+            with open(BEST_SCORE_FILE, "w") as file:
                 file.write(str(self.max_score))
 
     def give_best_score(self):
@@ -58,6 +60,13 @@ class Score_Board(Turtle):
         self.write(f"Best score: {self.max_score}")
 
     def what_is_max_score(self):
-        with open(best_score_file, "r") as file:
-            data = file.read()
-            return int(data)
+        try:
+            with open(BEST_SCORE_FILE, "r") as file:
+                data = file.read()
+                if data != '':
+                    return int(data)
+                else:
+                    return int('0')
+        except FileNotFoundError:
+            file = open(BEST_SCORE_FILE, 'x')
+            file.close()

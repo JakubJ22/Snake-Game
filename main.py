@@ -1,11 +1,15 @@
 import secrets
+import time
+
 from turtle import Turtle, Screen
 
-
 from snake import Snake
+
 from score_board import Score_Board
+from score_board import BEST_SCORE_FILE
+
 from food import Food
-import time
+
 
 """Setting up the screen settings"""
 screen = Screen()
