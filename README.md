@@ -6,8 +6,8 @@ The game consists of several components:
 #### File: food.py
 #### Description: This module creates food for the snake to eat.
 #### Attributes:
-#### Shape: Circle
-#### Color: Blue
+###### Shape: Circle
+###### Color: Blue
 #### Methods:
 show_on_screen(): Randomizes the position of the food on the screen.
 ### 2. Snake
