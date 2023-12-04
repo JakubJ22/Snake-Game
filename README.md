@@ -9,36 +9,36 @@ The game consists of several components:
 ###### Shape: Circle
 ###### Color: Blue
 #### Methods:
-show_on_screen(): Randomizes the position of the food on the screen.
+###### show_on_screen(): Randomizes the position of the food on the screen.
 ### 2. Snake
-File: snake.py
-Description: Defines the snake and its functionalities.
-Attributes:
+#### File: snake.py
+#### Description: Defines the snake and its functionalities.
+#### Attributes:
 Initially consists of 3 segments.
-Methods:
-create_snake(): Creates a snake from segments.
-extend_snake(): Extends the snake by adding a new segment.
-move(): Moves the snake according to specified directions.
-up(), down(), right(), left(): Changes the direction of the snake.
+#### Methods:
+###### create_snake(): Creates a snake from segments.
+###### extend_snake(): Extends the snake by adding a new segment.
+###### move(): Moves the snake according to specified directions.
+###### up(), down(), right(), left(): Changes the direction of the snake.
 ### 3. Score Board
-File: score_board.py
-Description: Manages and displays the game score.
-Attributes:
+#### File: score_board.py
+#### Description: Manages and displays the game score.
+#### Attributes:
 Shows the player's score and the best score achieved.
-Methods:
-give_score(): Displays the current score.
-counting(): Provides a countdown before starting the game.
-exit_info(): Displays instructions on how to start a new game or close the window.
-game_over(): Shows "GAME OVER" on the screen and updates the best score.
-update_best_score(): Updates the best score if the current score exceeds it.
-give_best_score(): Displays the best score achieved.
+#### Methods:
+###### give_score(): Displays the current score.
+###### counting(): Provides a countdown before starting the game.
+###### exit_info(): Displays instructions on how to start a new game or close the window.
+###### game_over(): Shows "GAME OVER" on the screen and updates the best score.
+###### update_best_score(): Updates the best score if the current score exceeds it.
+###### give_best_score(): Displays the best score achieved.
 ### 4. Main
-File: main.py
-Description: Contains the main game loop and integrates all components.
-Functions:
-game_on(): Initializes the game by setting up the screen and binding keys for movement.
-next_round(): Allows starting a new game by pressing the spacebar.
-Game Loop:
+#### File: main.py
+#### Description: Contains the main game loop and integrates all components.
+#### Functions:
+###### game_on(): Initializes the game by setting up the screen and binding keys for movement.
+###### next_round(): Allows starting a new game by pressing the spacebar.
+#### Game Loop:
 Controls the movement of the snake, checks collisions, updates the score, and handles game-over scenarios.
 
 ### How to Play
